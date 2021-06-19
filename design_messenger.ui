@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>client</class>
+ <widget class="QMainWindow" name="client">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>740</width>
+    <height>475</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Cambria</family>
+    <pointsize>16</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Test Messenger</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(75, 73, 89);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="Line" name="spacer">
+    <property name="geometry">
+     <rect>
+      <x>189</x>
+      <y>0</y>
+      <width>4</width>
+      <height>508</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(18, 17, 21)</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>62</y>
+      <width>190</width>
+      <height>414</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>188</width>
+       <height>412</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="empty_label">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>200</y>
+        <width>46</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cambria</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(193, 195, 154);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listing">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>190</width>
+        <height>414</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(64, 62, 76);</string>
+      </property>
+     </widget>
+     <zorder>listing</zorder>
+     <zorder>empty_label</zorder>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="messages">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>95</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cambria</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(193, 195, 154);
+background-color: rgb(64, 62, 76);</string>
+    </property>
+    <property name="text">
+     <string>Messages</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="contacts">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>0</y>
+      <width>95</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cambria</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(193, 195, 154);background-color: rgb(64, 62, 76);</string>
+    </property>
+    <property name="text">
+     <string>Contacts</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="select_dialog">
+    <property name="geometry">
+     <rect>
+      <x>397</x>
+      <y>189</y>
+      <width>117</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cambria</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(193, 195, 154);</string>
+    </property>
+    <property name="text">
+     <string>Select dialog</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="new_message">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>35</y>
+      <width>190</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cambria</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(193, 195, 154);background-color: rgb(64, 62, 76);</string>
+    </property>
+    <property name="text">
+     <string>New message</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="name_label">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>29</y>
+      <width>28</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cambria</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(193, 195, 154);</string>
+    </property>
+    <property name="text">
+     <string>IP:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="name_edit">
+    <property name="geometry">
+     <rect>
+      <x>304</x>
+      <y>24</y>
+      <width>421</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cambria</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(193, 195, 154);background-color: rgb(64, 62, 76);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="message_write">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>427</y>
+      <width>424</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(64, 62, 76);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="send">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>427</y>
+      <width>44</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(64, 62, 76);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>scrollArea</zorder>
+   <zorder>select_dialog</zorder>
+   <zorder>messages</zorder>
+   <zorder>contacts</zorder>
+   <zorder>spacer</zorder>
+   <zorder>name_label</zorder>
+   <zorder>name_edit</zorder>
+   <zorder>new_message</zorder>
+   <zorder>message_write</zorder>
+   <zorder>send</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
