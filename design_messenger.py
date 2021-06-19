@@ -107,7 +107,7 @@ class Ui_client(object):
         self.message_write.setObjectName("message_write")
         self.send = QtWidgets.QPushButton(self.centralwidget)
         self.send.setGeometry(QtCore.QRect(690, 427, 44, 38))
-        self.send.setStyleSheet("background-color: rgb(64, 62, 76);")
+        self.send.setStyleSheet("background-color: rgb(64, 62, 76); border-radius: 22")
         self.send.setText("")
         self.send.setObjectName("send")
         self.scrollArea.raise_()
